@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-import avahi-cname-aliases
+import avahi_cname_aliases
 
-def main():
-	aliases = avahi-cname-aliases.Aliases()
-	aliases.run()
+aliases = avahi_cname_aliases.Aliases()
+aliases.run()

@@ -10,15 +10,7 @@ setup(
 	author_email='hello@dalee.ru',
 	license='MIT',
 	keywords='avahi cname alias systemd',
-	packages=[
-		'avahi-cname-aliases'
-	],
-	scripts=[
-		'bin/avahi-cname-aliases'
-	],
-	install_requires=[
-		'python-avahi',
-		'dbus-python'
-	],
+	packages=['avahi_cname_aliases'],
+	scripts=['bin/avahi-cname-aliases'],
 	zip_safe=False
 )
