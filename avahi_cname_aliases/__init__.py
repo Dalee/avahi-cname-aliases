@@ -20,7 +20,7 @@ class Aliases:
 		self.running = True
 		self.server = None
 		self.group = None
-		self.cname_dir = os.path.join("/etc", "avahi-aliases.d")
+		self.cname_dir = os.path.join("/etc", "avahi", "aliases.d")
 		self.cname_list = []
 
 
