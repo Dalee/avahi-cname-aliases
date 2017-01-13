@@ -58,8 +58,10 @@ class Aliases:
 
 	# publish all aliases to avahi daemon
 	def publish_aliases(self):
-		bus = dbus.SystemBus()
+		if len(self.cname_list) == 0:
+			return
 
+		bus = dbus.SystemBus()
 		bus_server = bus.get_object(avahi.DBUS_NAME, avahi.DBUS_PATH_SERVER)
 		bus_group = bus.get_object(avahi.DBUS_NAME, bus_server.EntryGroupNew())
 
